@@ -4,7 +4,7 @@
 
 		<title> Hauntings In America </title>
 		<link rel="stylesheet" href="styles.css">
-		
+
 	</head>
 	<body>
 
@@ -65,42 +65,13 @@
 		</div>
 		
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
-		<script src="jquery.easing.min.js"></script>
 		<script src="jquery.cycle.all.js"></script>
 		<script src="jquery.maximage.js"></script>
 		<script src="jquery.fullscreen.js"></script>
 		<script src="jquery.ba-hashchange.js"></script>
 		<script src="main.js"></script>
+		<script src="main2.js"></script>
 
-		<script type="text/javascript">
-			$(function(){
-				$('#maximage').maximage({
-					cycleOptions: {
-						fx: 'fade',
-						speed: 1000,
-						timeout: 5000,
-						prev: '#arrow_left',
-						next: '#arrow_right',
-						pause: 0,
-						before: function(last,current){
-							if(!$.browser.msie){
-								if($(current).find('video').length > 0) $(current).find('video')[0].play();
-							}
-						},
-						after: function(last,current){
-							if(!$.browser.msie){
-								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
-							}
-						}
-					},
-					onFirstImageLoaded: function(){
-						jQuery('#cycle-loader').hide();
-						jQuery('#maximage').fadeIn('fast');
-					}
-				});
-				jQuery('video,object').maximage('maxcover');
-	
-			});
-		</script>
+		
   </body>
 </html>

@@ -5,8 +5,6 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight:400;
-	-webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
 	color: #777;
 	background: #000;
 }
@@ -20,7 +18,7 @@ h1{font-size: 63px; line-height: 70px; padding: 0; margin: 0;}
 h5{font-size: 28px; line-height: 35px; padding: 0; margin: 0; color: #b7b7b7;}
 
 a {
-	color: #b7b7b7;
+	color: orange;
 	text-decoration:none;
 	font-weight: normal;
 }
